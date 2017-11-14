@@ -1,0 +1,15 @@
+%%% radius.app
+
+{application, radius,
+   [{description, "RADIUS Protocol Stack"},
+   {vsn, git},
+   {modules, [{{modules}}]},
+   {maxP, infinity},
+   {maxT, infinity},
+   {registered, [radius]},
+   {included_applications, []},
+   {applications, [kernel, stdlib]},
+   {env, [{sock_opts, []}]},
+   {mod, {radius_app, []}},
+   {start_phases, []}]}.
+
